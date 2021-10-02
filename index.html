@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Karen HB</title>
+        <!--Aqui vou adicionar os arquivos CSS e JS-->
+        <link rel="stylesheet" href="./css/style.css"> 
+        <script src="./js/index.js" defer></script>
+        <!--Aqui vou adicionar as fontes-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <!--Aqui vou adicionar os ícones-->
+        <script src="https://kit.fontawesome.com/c29327f981.js" crossorigin="anonymous" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Bem vindo</h1>
+        </header>
+
+        <main>
+    <!--Aqui estou criando o formulário de loguin-->
+            <form>
+                <section class="inputs-container">
+                    <input type="email" placeholder="example@gmail.com">
+
+    <!-- A div de password-->
+                    <div class="password-container">
+                        <input type="password" id="field-password" class="field-password" placeholder="******">
+                        <i class="fas fa-eye" id="eye" onclick="showPassword()"></i>
+                        <i class="fas fa-eye-slash" id="eye-slash" onclick="showPassword()"></i>                        
+                    </div>
+                </section>
+    <!--Aqui a sessão das informações de esquecer a senha-->
+                <section class="password-infos">
+                        <div>
+                            <input type="checkbox">
+                            <span>Lembrar senha?</span>
+                        </div>
+                        <a href="#">Esqueceu sua senha?</a>
+                </section>
+    <!--Aqui o botão de login-->
+                <button id="btn-login">Login</button>
+    <!--Aqui vamos abrir espaço para o usuário fazer login com as redes sociais dele-->
+                <section class="links-container">
+                    <span>Acessar com:</span>
+
+                    <aside>
+                        <a href="#"><i class="fab fa-google-plus-square google"></i></a>
+                        <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square facebook"></i></a>
+                    </aside>
+                </section>
+
+                <footer>
+                    <hr>
+                    <span>Ainda não tem uma conta?<br><a href="#">Cadastra-se</a></span>
+                  
+                </footer>
+            </form>
+        </main>
+    </body>
+    <footer>
+        <div class="rodape">
+            <h1>Desenvolvido com carinho by Karen Banci</h1>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/banci.kakis/" target="_blank"><i class="fab fa-facebook-square face"></i></a>
+            <a href="https://www.linkedin.com/in/karen-caroline-honorio-banci-198827112/" target="_blank"><i class="fab fa-linkedin link"></i></a>
+            <a href="https://github.com/karenbanci" target="_blank"><i class="fab fa-github-square github"></i></a>
+            <a href="https://www.instagram.com/kakabanci/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        </div>
+    </footer>
+</html>
